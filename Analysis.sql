@@ -11,7 +11,7 @@ SELECT
     ) AS monthly_growth_rate
 FROM Fact_Bookings fb
 JOIN Dim_Date d ON fb.booking_date_id = d.date_id
-GROUP BY d.year, d.month, d.month_name, d.month
+GROUP BY d.year, d.month, d.month_name
 ORDER BY 3;
 
 --- Months with the highest revenue
